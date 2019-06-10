@@ -1,9 +1,20 @@
-const { Gateway, FunctionParser } = require('functionscript');
+const { Daemon, FunctionParser } = require('functionscript');
 
-function start() {
-  let gateway = new Gateway({
-    port: process.env.PORT || 8000,
-    maxRequestSizeMB: process.env.MAX_REQUEST_SIZE && parseInt(process.env.MAX_REQUEST_SIZE),
+const cluster = require('cluster');
+const PORT = process.env.PORT || 8000;
+const MAX_REQUEST_SIZE = process.env.MAX_REQUEST_SIZE && parseInt(process.env.MAX_REQUEST_SIZE) || null;
+
+if (cluster.isMaster) {
+
+  // Start HTTP Daemon
+  new Daemon(1).start(PORT);
+
+} else {
+
+  // Cluster to Gateway
+  let gateway = new Daemon.Gateway({
+    port: PORT,
+    maxRequestSizeMB: MAX_REQUEST_SIZE,
     debug: true
   });
   let functionParser = new FunctionParser();
@@ -14,6 +25,5 @@ function start() {
     process.exit(1);
   }
   gateway.listen();
-}
 
-start();
+}
