@@ -7,12 +7,9 @@ const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
 * @returns {object} result The result of the SMS
 */
 module.exports = async (tel, body) => {
-
   let result = await lib.utils.sms['@1.0.11']({
     to: tel,
     body: `Testing from FunctionScript Server:\n${body}`
   });
-
   return result;
-
 };
