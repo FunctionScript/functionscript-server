@@ -34,7 +34,7 @@ Adds two numbers together with a hello message, returns JSON string
 
 Uses [utils/sms](https://stdlib.com/@utils/lib/sms) to send an SMS message
 
-### `./function/static/__notfound__.js`
+### `./functions/static/__notfound__.js`
 
 Routes static resources from `./static/` directory based on pathname
 
