@@ -1,9 +1,7 @@
-# functionscript-server
+# functionscript-server [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 ## A simple Heroku-based example of FunctionScript API Development
 
 [![FunctionScript](./static/images/fs-wordmark.png)](https://github.com/FunctionScript/FunctionScript)
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Introduction
 
