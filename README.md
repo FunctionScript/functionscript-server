@@ -196,7 +196,7 @@ Thanks to those who helped with the example!
 
 ### Contributors
 
-- [Steve Meyer](https://twitter.com/notoriage)
+- [Steve Meyer](https://twitter.com/notoriaga)
 - [Keith Horwood](https://twitter.com/keithwhor)
 
 FunctionScript is (c) 2019 Polybit Inc.
