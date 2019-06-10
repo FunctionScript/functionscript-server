@@ -1,0 +1,15 @@
+{
+  "name": "functionscript-server",
+  "description": "Example FunctionScript Server",
+  "repository": "https://github.com/notoriaga/functionscript-server",
+  "env": {
+    "DEBUG": {
+      "description": "Enable extra logging.",
+      "value": "true"
+    },
+    "MAX_REQUEST_SIZE": {
+      "description": "Max request size in MB.",
+      "value": "128"
+    }
+  }
+}
