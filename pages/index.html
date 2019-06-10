@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FunctionScript Server Example</title>
+<meta name="description" content="FunctionScript is a language and specification for turning JavaScript functions into typed HTTP APIs.">
+<meta name="keywords" content="functionscript, fs, fnscript, javascript, language, specification, faas, api, apis">
+<meta name="author" content="Polybit Inc.">
+<meta name="robots" content="index,follow,archive">
+<meta property="og:description" content="FunctionScript is a language and specification for turning JavaScript functions into typed HTTP APIs.">
+<meta property="og:image" content="./images/fs-wordmark.png">
+<link rel="icon" type="image/png" href="./images/functionscript-favicon.png">
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+	body {
+		background-color: #ed4c40;
+		margin: 0px;
+		padding: 0px;
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	a, a:link, a:visited, a:active {
+		color: #ffed40;
+		font-weight: 400;
+		text-decoration: none;
+	}
+	a:hover {
+		border-bottom: 1px solid #ffed40;
+	}
+	strong {
+		font-weight: 700;
+	}
+	.container {
+		width: 800px;
+		max-width: 100%;
+		margin: 20px auto;
+		position: relative;
+	}
+	.logo img {
+		display: block;
+		margin: 0px auto;
+		width: 200px;
+		max-width: 100%;
+		max-height: 50vh;
+	}
+	.hero {
+		text-align: center;
+		font-size: 18px;
+		line-height: 24px;
+		margin: 20px;
+	}
+	.github {
+		margin: 40px 20px;
+		text-align: center;
+	}
+</style>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="./static/images/fs-wordmark.svg">
+		</div>
+		<div class="github">
+			<a class="github-button"
+				href="https://github.com/FunctionScript/FunctionScript"
+				data-size="large"
+				aria-label="Star FunctionScript/FunctionScript on GitHub">FunctionScript/FunctionScript on GitHub</a>
+		</div>
+		<div class="hero">
+			Welcome to your very own <strong>FunctionScript Server</strong> example!<br><br>
+			The current value of name is: name=<strong>{%name}</strong>.<br>
+			You can change the default behavior in ./functions/__main__.js<br><br>
+			Play with the query parameter using this link:<br><br><a href="./?name=Another%20Name">./?name=Another%20Name</a>.<br><br>
+			You can see a simple addition API here:<br><br>
+			<a href="./add/?a=1&b=2">./add/?a=1&b=2</a><br><br>
+			You can see a simple SMS API here using <a href="https://stdlib.com/@utils/lib/sms">Standard Library: utils/sms</a>:<br><br>
+			<a href="./sms/?tel=555-555-5555&body=Hello!">./sms/?tel=555-555-5555&body=Hello!</a><br>
+			Try changing the phone number!
+		</div>
+	</div>
+</body>
+</html>

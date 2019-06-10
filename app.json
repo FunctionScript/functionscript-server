@@ -3,9 +3,9 @@
   "description": "Example FunctionScript Server",
   "repository": "https://github.com/notoriaga/functionscript-server",
   "env": {
-    "DEBUG": {
-      "description": "Enable extra logging.",
-      "value": "true"
+    "NODE_ENV": {
+      "description": "The Node Environment. We suggest using \"release\" for production.",
+      "value": "release"
     },
     "MAX_REQUEST_SIZE": {
       "description": "Max request size in MB.",
