@@ -1,6 +1,6 @@
 # functionscript-server
 
-A simple Heroku-based example of FunctionScript API Development
+A simple Heroku-based example of [FunctionScript](https://github.com/FunctionScript/FunctionScript) API Development
 
 [![FunctionScript](./static/images/fs-wordmark.png)](https://github.com/FunctionScript/FunctionScript)
 
